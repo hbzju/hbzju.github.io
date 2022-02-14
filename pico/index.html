@@ -33,7 +33,7 @@
                 <a href="https://hbzju.github.io/">Haobo Wang</a><sup>1</sup>&nbsp;
                 <a>Ruixuan Xiao</a><sup>1</sup>&nbsp;
                 <a href="https://pages.cs.wisc.edu/~sharonli/index.html">Sharon Li</a><sup>2</sup>&nbsp;
-                <br>
+                <!-- <br> -->
                 <a href="https://lfeng-ntu.github.io/">Lei Feng</a><sup>3,4</sup>&nbsp;
                 <a href="https://niug1984.github.io/">Gang Niu</a><sup>4</sup>&nbsp;
                 <a>Gang Chen</a><sup>1</sup>&nbsp;
@@ -42,7 +42,7 @@
             </div>
 	<br>
 	
-  <table align=center width=900px>
+  <table align=center width=850px>
      <tr>
     <span style="font-size:20px">Zhejiang University<sup>1</sup></span>
     <br>
@@ -57,113 +57,101 @@
   </table>
         </div>
 
-       
+        <!--=================Materials==========================-->
+        <div class="section materials" , id="materials">
+      <table align=center width=850px>
+          <tr>
+<!--           <td><h2>Materials</h2></td>
+          <br>      -->
+          <td><a href="https://arxiv.org/abs/2201.08984v2"><img style="height:180px" src="./img/pico_paper.png"/></a></td>
+          <td><span style="font-size:13pt">PiCO: Contrastive Label Disambiguation for Partial Label Learning<br><br>
+                          <i>Haobo Wang, Ruixuan Xiao, Yixuan Li, Lei Feng, Gang Niu, Gang Chen, Junbo Zhao</i><br><br>
+          International Conference on Learning Representations, ICLR 2022 (<b>Oral</b>, Top 1.59%). <br>
+          </td>
+                  </td>
+              </tr>
+        </table>
+       <table align=center width=400px>
+        <tr>
+          <td><span style="font-size:14pt"><center>
+            <a href="https://arxiv.org/pdf/2201.08984v2.pdf">[PDF]</a>
+                  </center></td>
+          <td><span style="font-size:14pt"><center>
+            <a href="https://github.com/hbzju/pico">[Code]</a>
+                  </center></td>
+              </tr>
+        </table>
 
-        <div class="section abstract">
-            <h2>Abstract</h2>
-            <br>
-            <p>
-                Partial label learning (PLL) is an important problem that allows each training example to be labeled with a coarse candidate set, which well suits many real-world data annotation scenarios with label ambiguity. Despite the promise, the performance of PLL often lags behind the supervised counterpart. In this work, we bridge the gap by addressing two key research challenges in PLL -- representation learning and label disambiguation -- in one coherent framework. Specifically, our proposed framework PiCO consists of a contrastive learning module along with a novel class prototype-based label disambiguation algorithm. PiCO produces closely aligned representations for examples from the same classes and facilitates label disambiguation. Theoretically, we show that these two components are mutually beneficial, and can be rigorously justified from an expectation-maximization (EM) algorithm perspective. Extensive experiments demonstrate that PiCO significantly outperforms the current state-of-the-art approaches in PLL and even achieves comparable results to fully supervised learning. 
         </div>
 
+        <br>
+
+        <div class="section abstract">
+        <table align=center width=850px>
+          <tr>
+            <td>
+            <h2>Abstract</h2>
+            <br>
+                Partial label learning (PLL) is an important problem that allows each training example to be labeled with a coarse candidate set, which well suits many real-world data annotation scenarios with label ambiguity. Despite the promise, the performance of PLL often lags behind the supervised counterpart. In this work, we bridge the gap by addressing two key research challenges in PLL -- representation learning and label disambiguation -- in one coherent framework. Specifically, our proposed framework PiCO consists of a contrastive learning module along with a novel class prototype-based label disambiguation algorithm. PiCO produces closely aligned representations for examples from the same classes and facilitates label disambiguation. Theoretically, we show that these two components are mutually beneficial, and can be rigorously justified from an expectation-maximization (EM) algorithm perspective. Extensive experiments demonstrate that PiCO significantly outperforms the current state-of-the-art approaches in PLL and even achieves comparable results to fully supervised learning.
+            </td>
+          </tr>
+        </table>
+      </div>
 
         <div class="section method">
+        <table align=center width=850px>
+          <tr>
+            <td>
             <h2>Method Overview</h2>
             <br>
             <center><img src="./img/pico_framework.png" border="0" width="82%"><br>
-                Illustation of PiCO architecture.
+                <b>Figure:</b> Illustation of PiCO architecture.
             </center>
+            </td>
+          </tr>
+        </table>
         </div>
+
 
         <div class="section results">
+        <table align=center width=850px>
+          <tr>
+            <td  align=center>
             <h2>Results</h2>
             <br>
-            <center><img src="./img/table_1.png" border="0" width="55%"><br>
-                Comparison with state-of-the-art methods on benchmark datasets. Bold indicates superior results. Notably, PiCO
-achieves comparable results to the fully supervised learning.
-            </center>
-
-            <center><img src="./img/pico_tsne.png" border="0" width="55%"><br>
-                T-SNE visualization of the image representation on CIFAR-10 with q = 0.5. Different colors
-represent the corresponding classes. </center>
+            </center><img src="./img/table_1.png" border="0" width="55%"><br>
+            <p><b>Figure:</b> Comparison with state-of-the-art methods on benchmark datasets. Bold indicates superior results. Notably, PiCO achieves comparable results to the fully supervised learning.</p>
+            <img src="./img/pico_tsne.png" border="0" width="70%"><br>
+            <p><b>Figure:</b> T-SNE visualization of the image representation on CIFAR-10 with q = 0.5. Different colors represent the corresponding classes.</p></center>
+            </td>
+          </tr>
+        </table>
         </div>
 
         <br>
 
-        <!--=================Materials==========================-->
-        <div class="section materials" , id="materials">
-            <h2>Materials</h2>
-			<br>
-			<table align=center width=1100>
-  			  <tr>
-  	            
-				  <td><a href="https://arxiv.org/abs/2201.08984v2"><img style="height:180px" src="./img/pico_paper.png"/></a></td>
-				  <td><span style="font-size:14pt">PiCO: Contrastive Label Disambiguation for Partial Label Learning<br><br>
-                          <i>Haobo Wang, Ruixuan Xiao, Yixuan Li, Lei Feng, Gang Niu, Gang Chen, Junbo Zhao</i><br><br>
-				  International Conference on Learning Representations,ICLR 2022. <br>
-				  </td>
-  	              </td>
-              </tr>
-  		  </table>
-		  <br>
-			 <table align=center width=400px>
-			  <tr>
-				  <td><span style="font-size:14pt"><center>
-				  	<a href="https://arxiv.org/pdf/2201.08984v2.pdf">[PDF]</a>
-  	              </center></td>
-
-
-<!-- 
-				  <td><span style="font-size:14pt"><center>
-				  	<a href="./support/EBT.pptx">[Poster]</a>
-  	              </center></td> -->
-
-				  <td><span style="font-size:14pt"><center>
-				  	<a href="https://github.com/hbzju/pico">[Code]</a>
-  	              </center></td>
-              </tr>
-  		  </table>
-		  <!--
-            <table width="80%" align="center" border=none cellspacing="0" cellpadding="30">
-                <tr>
-                    <td width="50%">
-                        <center>
-                            <a href="https://arxiv.org/abs/2201.08984v2" target="_blank" class="imageLink"><img
-                                    src="./img/pico_paper.png" , width="50%"></a><br><br>
-                            <a href="https://arxiv.org/abs/2201.08984v2" target="_blank">Paper</a>
-                        </center>
-                    </td>
-                    <td width="50%" valign="middle">
-                        <center>
-                            <a href="https://github.com/hbzju/pico" target="_blank"
-                               class="imageLink"><img
-                                    src="./img/icon_github.png" , width="50%"></a><br><br>
-                            <a href="https://github.com/hbzju/pico" target="_blank">Codes</a>
-                        </center>
-                    </td>
-                </tr>
-            </table>
-			-->
-        </div>
-
-        <br>
 
         <div class="section citation">
+        <table align=center width=850px>
+          <tr>
+            <td>
             <h2>Citation</h2>
-            <div class="section bibtex">
-      <pre>@misc{wang2022pico,
-      title={PiCO: Contrastive Label Disambiguation for Partial Label Learning}, 
-      author={Haobo Wang and Ruixuan Xiao and Yixuan Li and Lei Feng
-             and Gang Niu and Gang Chen and Junbo Zhao},
-      year={2022},
-      eprint={2201.08984},
-      archivePrefix={arXiv},
-      primaryClass={cs.LG}
-      }</pre>
-            </div>
+            <p>If you found any part of this code is useful in your research, please consider citing our paper:
+
+</p>
+                        <div class="section bibtex">
+                  <pre>@article{wang2022contrastive,
+    title={Contrastive Label Disambiguation for Partial Label Learning}, 
+    author={Wang, Haobo and Xiao, Ruixuan and Li, Yixuan and Feng, Lei
+    and Niu, Gang and Chen, Gang and Zhao, Junbo},
+    journal={Proceedings of the International Conference on Learning Representations},
+    year={2022}
+}</pre>
+                        </div>
+            </td>
+          </tr>
+        </table>
         </div>
-
-
 
 </body>
 </html>
