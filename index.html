@@ -1,716 +1,173 @@
-<html>
-
+<!doctype html>
+<html lang="en">
 <head>
-    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
-    <link rel="stylesheet" type="text/css" href="style.css" />
-    <title>Haobo Wang</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Haobo Wang, Assistant Professor at Zhejiang University. Research in machine learning, large language models, and tabular intelligence.">
+  <title>Haobo Wang</title>
+  <link rel="stylesheet" href="home.css">
+  <style>
+    .photo{width:220px;height:265px;overflow:hidden;border-radius:3px;background:#eaf1fa}
+    .photo img{width:100%;height:100%;object-fit:cover;object-position:center 28%;transform:scale(1.32);transform-origin:center 26%;border-radius:0}
+    .papers article{padding-right:0;padding-top:23px}
+    .papers .venue{left:0;right:auto;top:0}
+    .selected-papers article{padding:12px 0 11px;margin-bottom:0}
+    .legacy-selection{display:none}
+    .selected-papers .venue{position:static;margin:0 0 2px;color:#1459a6;font-size:14px;font-weight:700;line-height:1.35;letter-spacing:0;text-transform:none}
+    .selected-papers h3{margin:0 0 2px;font-size:15px;line-height:1.38}
+    .selected-papers h3+p{line-height:1.45}
+    .award{display:inline-block;margin-top:5px;padding:3px 8px;border-radius:3px;background:#eef4fb;color:#1459a6;font-size:12px;font-weight:700}
+    @media(max-width:680px){.photo{width:96px;height:120px}.photo img{width:100%;height:100%;transform:scale(1.42);transform-origin:center 24%}}
+  </style>
 </head>
-
 <body>
-<table summary="Table for page layout." id="tlayout">
-<tr valign="top">
-<h1 style="padding-left: 0.5em">Haobo Wang</h1><hr>
-<td id="layout-menu">
-    <div class="menu-item"><a href="./index.html" class="current">Home</a></div>
-    <div class="menu-item"><a href="./bio.html">Short Bio</a></div>
-	<div class="menu-item"><a href="./services.html">Professional Services</a></div>
-</td>
+  <header class="topbar">
+    <a class="name" href="#top">Haobo Wang</a>
+    <nav aria-label="Primary navigation">
+      <a href="#about">About</a>
+      <a href="#publications">Publications</a>
+      <a href="#education">Education</a>
+      <a href="#service">Service</a>
+    </nav>
+  </header>
 
-<td id="layout-content">
-    <h1 style="margin-top: 0em">Home</h1><br>
-    <table class="imgtable"><tr valign="top">
-        <td align="left">
-            <p><span style="font-size: 130%"><b>Haobo Wang (王 皓波)</b></span></p>
-            <p>
-                <b>Assistant Professor (PhD Supervisor)</b><br>
-                <a href="http://www.cst.zju.edu.cn/cstenglish/main.htm" target="_blank">School of Software Technology</a> <br>
-                <a href="https://www.zju.edu.cn/english/" target="_blank">Zhejiang University, China</a> <br>
-                Email: wanghaobo AT zju.edu.cn &nbsp;/ 
-                <a href="https://scholar.google.com/citations?user=DnN-rggAAAAJ" target="_blank">Google Scholar</a>
-			</p>
-        </td>
-    </tr></table>
-    <!--<ul>-->
-    <p>My research interests lie generally in the area of machine learning and data intelligence, including open-world learning algorithms, large language models, and tabular data analysis.  </p>
-    <!--</ul>-->
-</div>
+  <main id="top">
+    <section class="profile" id="about">
+      <div class="photo"><img src="assets/haobo-wang.jpg" alt="Portrait of Haobo Wang"></div>
+      <div class="profile-copy">
+        <p class="role">Assistant Professor · PhD Supervisor</p>
+        <h1>Haobo Wang <span>王皓波</span></h1>
+        <p class="affiliation">School of Software Technology<br>Zhejiang University</p>
+        <p class="bio">My research focuses on machine learning and data intelligence, with particular interests in <strong>open-world learning</strong>, <strong>large language models</strong>, and <strong>tabular data analysis</strong>.</p>
+        <div class="links">
+          <a href="mailto:wanghaobo@zju.edu.cn">Email</a>
+          <a href="https://scholar.google.com/citations?user=DnN-rggAAAAJ" target="_blank" rel="noopener">Google Scholar</a>
+          <a href="https://github.com/hbzju" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </div>
+    </section>
 
-<div>
-    <h2><hr><a name="Publications"></a>Publications</h2>
-	(* Corresponding author.)
-    <div>	
-        <ul>
-            <li><p style = "margin:15px 0">
-				Ru Peng, Jinyang Zhang, Yawen Zeng, Kexin Yang, Junyang Lin, <b>Haobo Wang*</b>, Gang Chen, Jingren Zhou, Dayiheng Liu, Junbo Zhao.<br>
-                DataXman: Selecting and Mixing Pretraining Data via Bilingual Mixture-of-Experts Data Manager.<br>
-                <i>Science China Information Sciences (<b>SCIS</b>)</i>, 2026.<br>
-            </p></li>
-        </ul>
-        <ul>
-            <li><p style = "margin:15px 0">
-                Shenzhi Yang, Guangcheng Zhu, <b>Haobo Wang*</b>, Xing Zheng, Yingfan MA, Zhongqi Chen, Bowen Song, Weiqiang Wang, Junbo Zhao, Gang Chen.<br>
-                TraPO: A Semi-Supervised Reinforcement Learning Framework for Boosting LLM Reasoning.<br>
-                <i>In Proceedings of the 14th International Conference on Learning Representations (<b>ICLR</b>)</i>, 2026.<br>
-            </p></li>
-        </ul>
-        <ul>
-            <li><p style = "margin:15px 0">
-                Zewei Yu, Lirong Gao, Sheng Guo, Yuke Zhu, Bo Zheng, Junbo Zhao, <b>Haobo Wang*</b>.<br>
-                Stop Unnecessary Reflection: Training LRMs for Efficient Reasoning with Adaptive Reflection and Length Coordinated Penalty.<br>
-                <i>In Proceedings of the 14th International Conference on Learning Representations (<b>ICLR</b>)</i>, 2026.<br>
-            </p></li>
-        </ul>
-        <ul>
-            <li><p style = "margin:15px 0">
-                Wentao Ye, Liyao Li, Zhiqing Xiao, Muzhi Zhu, Jiaqi Hu, Zhanming Shen, Xiaomeng Hu, Sean Du, <b>Haobo Wang*</b>.<br>
-                FLaG: Fine-Grained Latent Grouping for Hallucination Detection.<br>
-                <i>ACM SIGKDD Conference on Knowledge Discovery and Data Mining (<b>KDD</b>)</i>, 2026.<br>
-            </p></li>
-        </ul>
-        <ul>
-            <li><p style = "margin:15px 0">
-                Lianjin Yu, Bohang Sun, Xiangning Zeng, <b>Haobo Wang</b>, Gengyu Lyu.<br>
-				Hypergraph-Based Unaligned Multi-View Clustering via Cluster-Aware Feature Extraction.<br>
-                <i>ACM SIGKDD Conference on Knowledge Discovery and Data Mining (<b>KDD</b>)</i>, 2026.<br>
-            </p></li>
-        </ul>
-        <ul>
-            <li><p style = "margin:15px 0">
-                Enhao Huang, Pengyu Sun, Zixin Lin, Alex Chen, Joey Ouyang, <b>Haobo Wang</b>, <br>DONG DONG, Gang Zhao, JamesYi, Frank Li, Tony Ling, Lowes Yang.<br>
-                DMind Benchmark: Toward a Holistic Assessment of LLM Capabilities across the Web3 Domain.<br>
-                <i>ACM SIGKDD Conference on Knowledge Discovery and Data Mining Datasets and Benchmarks Track (<b>KDD</b>)</i>, 2026.<br>
-            </p></li>
-        </ul>
-        <ul>
-            <li><p style = "margin:15px 0">
-                Xing Xi, Liyao Li, Hao Chen, Ningtao Wang, Peixian Chen, Peilin Tong, Xing Fu, Yu Cheng, <b>Haobo Wang*</b>, <br>Gang Chen, Junbo Zhao, Ronghua Luo.<br>
-                Awakening Visual Reasoning: Mitigating Post-Training Failure in Vision-Text Compression.<br>
-                <i>In Proceedings of The Forty-Third International Conference on Machine Learning (<b>ICML</b>)</i>, 2026.<br>
-            </p></li>
-        </ul>
-        <ul>
-            <li><p style = "margin:15px 0">
-                Jianxiong Zhang, Bing Guo, Yuming Jiang, <b>Haobo Wang</b>, Bo An, Xuefeng Du.<br>
-                Harnessing Reasoning Trajectories for Hallucination Detection via Answer-agreement Representation Shaping.<br>
-                <i>In Proceedings of The Forty-Third International Conference on Machine Learning (<b>ICML</b>)</i>, 2026.<br>
-            </p></li>
-        </ul>
-        <ul>
-            <li><p style = "margin:15px 0">
-                Yuhang Yang, Kai Tang, Chao Ye, <b>Haobo Wang*</b>, Qiqi Luo, Jin Guang Zheng, Zhixin Zhang.<br>
-                Everyone is unique: Towards Behaviorally Heterogeneous Negotiation Dialogue Systems for Debt Collection.<br>
-                <i>Annual Meeting of the Association for Computational Linguistics (<b>ACL-Main</b>)</i>, 2026.<br>
-            </p></li>
-        </ul>
-        <ul>
-            <li><p style = "margin:15px 0">
-                Lirong Gao, Zewei Yu, Zhongrui Yin, Qi Zhang, Yuke Zhu, Bo Zheng, <b>Haobo Wang</b>, Junbo Zhao, Gang Chen, Sheng Guo.<br>
-                Towards Interpretable Tabular Reasoning: Enhancing LLM Reasoning on Tabular Data with Pre-Constructed Logic Graph.<br>
-                <i>Annual Meeting of the Association for Computational Linguistics (<b>ACL-Main</b>)</i>, 2026.<br>
-            </p></li>
-        </ul>
-        <ul>
-            <li><p style = "margin:15px 0">
-                Shouqing Yang, Qi Zhang, Yuhang Yang, Ruikang Xu, Yuwei Hou, Zhulin Jia, Lirong Gao, <b>Haobo Wang*</b>, <br> Jinglei Chen, Jiexiang Wang, Sheng Guo, Bo Zheng, Gang Chen.<br>
-                FinMRAGBench: A Realistic and Complex Benchmark for Multi-Modal RAG in Financial Document Analysis.<br>
-                <i>Annual Meeting of the Association for Computational Linguistics (<b>ACL-Findings</b>)</i>, 2026.<br>
-            </p></li>
-        </ul>
-        <ul>
-            <li><p style = "margin:15px 0">
-                Xiaomeng Hu, Yixuan Tang, Haoze Li, Hao Chen, Qi Zhang, Zhanming Shen, Yiming Zhang, <b>Haobo Wang</b>, Junbo Zhao.<br>
-                Fine-Grained Data Ordering Improves Fine-Tuning for Large Language Models.<br>
-                <i>Annual Meeting of the Association for Computational Linguistics (<b>ACL-Findings</b>)</i>, 2026.<br>
-            </p></li>
-        </ul>
-		<ul>
-            <li><p style = "margin:15px 0">
-                Wentao Ye, Jiaqi Hu, <b>Haobo Wang*</b>, Xinpeng Ti, Zhiqing Xiao, Hao Chen, Liyao Li, Lei Feng, Sai Wu, Junbo Zhao.<br>
-                An Invariant Latent Space Perspective on Language Model Inversion.<br>
-                <i>Proceedings of the AAAI Conference on Artificial Intelligence (<b>AAAI</b>)</i>, 2026.<br>
-            </p></li>
-        </ul>
-        <ul>
-            <li><p style = "margin:15px 0">
-                Kai Tang, Yixuan Tang, Tianyi Chen, Haokai Xu, Qiqi Luo, Jin Guang Zheng, Zhixin Zhang, Gang Chen, <b>Haobo Wang</b>.<br>
-                Group-aware Multiscale Ensemble Learning for Test-Time Multimodal Sentiment Analysis.<br>
-                <i>Proceedings of the AAAI Conference on Artificial Intelligence (<b>AAAI</b>)</i>, 2026.<br>
-            </p></li>
-		</ul>
-        <ul>
-            <li><p style = "margin:15px 0">
-                Zhen Zhu, Yixuan Tang, <b>Haobo Wang</b>, Gengyu Lyu, Cheng Peng, Yining Sun, Kai Tang, Songhe Feng.<br>
-                Dual Graph Disambiguation for Multi-Instance Partial-Label Learning.<br>
-                <i>Proceedings of the AAAI Conference on Artificial Intelligence (<b>AAAI</b>)</i>, 2026.<br>
-            </p></li>
-		</ul>
-        <ul>
-            <li><p style = "margin:15px 0">
-                Liyao Li, Hao Chen, Jiaming Tian, Wentao Ye, Lirong Gao, Chao Ye, Ningtao Wang, Xing Fu, <br>
-				Yu Cheng, <b>Haobo Wang</b>, Gang Chen, Junbo Zhao.<br>
-                Reinforcement Learning with Verbalized Probabilities for LLM Classification.<br>
-                <i>In Proceedings of the The Web Conference (<b>WWW</b>)</i>, 2026.<br>
-            </p></li>
-        </ul>
-        <ul>
-            <li><p style = "margin:15px 0">
-            	Yibo Wang, Ruikang Xu, Guangcheng Zhu, Cheng Peng, <b>Haobo Wang*</b>, Runze Wu, Minmin Lin, Changjie Fan.<br>
-                MarCon: Max-Margin Contrastive Learning for Imbalanced Domain Adaptation Semantic Segmentation.<br>
-                <i>Proceedings of the 35th International Joint Conference on Artificial Intelligence (<b>IJCAI</b>)</i>, 2026.<br>
-            </p></li>
-        </ul>
-        <ul>
-            <li><p style = "margin:15px 0">
-            	Xiangyu Ren, Mingxuan Xia, Guangcheng Zhu, Gengyu Lyu, Peng Lu, <b>Haobo Wang</b>.<br>
-                Dual Branch Mutual Teaching for Long-Tailed Partial Label Learning.<br>
-                <i>Proceedings of the 35th International Joint Conference on Artificial Intelligence (<b>IJCAI</b>)</i>, 2026.<br>
-            </p></li>
-        </ul>
-        <ul>
-            <li><p style = "margin:15px 0">
-                Zhiqing Xiao, <b>Haobo Wang*</b>, Yali Ye, Wentao Ye, Hao Chen, Gang Chen, Junbo Zhao, and Rex Ying.<br>
-                LADA: Label Disambiguation and Domain-Aware Learning for Domain Generalization.<br>
-                <i>Machine Learning Journal (<b>MLJ</b>)</i>, 2026.<br>
-            </p></li>
-        </ul>
-        <ul>
-            <li><p style = "margin:15px 0">
-                Shenzhi Yang, Junbo Zhao, Sharon Li, Shouqing Yang, Dingyu Yang, Xiaofang Zhang, <b>Haobo Wang*</b>.<br>
-                Harnessing Feature Resonance under Arbitrary Target Alignment for Out-of-Distribution Node Detection.<br>
-                <i>Annual Conference on Neural Information Processing Systems (<b>NeurIPS</b>)</i>, 2025.<br>
-            </p></li>
-		</ul>
-        <ul>
-            <li><p style = "margin:15px 0">
-                Zhifang Zhang, Shuo He, <b>Haobo Wang</b>, Bingquan Shen, Lei Feng.<br>
-                Defending Multimodal Backdoored Models by Repulsive Visual Prompt Tuning.<br>
-                <i>Annual Conference on Neural Information Processing Systems (<b>NeurIPS</b>)</i>, 2025.<br>
-            </p></li>
-		</ul>		
-        <ul>
-            <li><p style = "margin:15px 0">
-                Liyao Li, Chao Ye, Wentao Ye, Yifei Sun, Zhe Jiang, <b>Haobo Wang</b>, Jiaming Tian, <br> Yiming Zhang, Ningtao Wang, Xing Fu, Gang Chen, Junbo Zhao.<br>
-                Table as a Modality for Large Language Models.<br>
-                <i>Annual Conference on Neural Information Processing Systems (<b>NeurIPS</b>)</i>, 2025.<br>
-            </p></li>
-		</ul>	
-        <ul>
-            <li><p style = "margin:15px 0">
-            	Mingxuan Xia, Zhijie Jiang, <b>Haobo Wang*</b>, Junbo Zhao, Tianlei Hu, Gang Chen.<br>
-                Ensembling Prompting Strategies for Zero-Shot Hierarchical Text Classification with Large Language Models.<br>
-                <i>The Conference on Empirical Methods in Natural Language Processing (<b>EMNLP-Main</b>)</i>, 2025.<br>
-            </p></li>
-        </ul>  
-        <ul>
-            <li><p style = "margin:15px 0">
-            	Qi Zhang, Shouqing Yang, Lirong Gao, Hao Chen, Xiaomeng Hu, Jinglei Chen, Jiexiang Wang, <br> 
-				Sheng Guo, Bo Zheng, <b>Haobo Wang*</b>, Junbo Zhao.<br>
-                LeTS: Learning to Think-and-Search via Process-and-Outcome Reward Hybridization.<br>
-                <i>The Conference on Empirical Methods in Natural Language Processing (<b>EMNLP-Main</b>)</i>, 2025.<br>
-            </p></li>
-        </ul>  
-        <ul>
-            <li><p style = "margin:15px 0">
-            	Kai Tang, Rui Wang, Renyu Zhu, Minmin Lin, Xiao Ding, Tangjie Lv, Changjie Fan, Runze Wu, <b>Haobo Wang*</b>.<br>
-                Towards Transferable Personality Representation Learning based on Triplet Comparisons and Its Applications.<br>
-                <i>The Conference on Empirical Methods in Natural Language Processing (<b>EMNLP-Main</b>)</i>, 2025.<br>
-            </p></li>
-        </ul>  
-        <ul>
-            <li><p style = "margin:15px 0">
-            	Zhanming Shen, Hao Chen, Yulei Tang, Shaolin Zhu, Wentao Ye, Xiaomeng Hu, <b>Haobo Wang</b>, Gang Chen, Junbo Zhao.<br>
-                CYCLE-INSTRUCT: Fully Seed-Free Instruction Tuning via Dual Self-Training and Cycle Consistency.<br>
-                <i>The Conference on Empirical Methods in Natural Language Processing (<b>EMNLP-Main</b>)</i>, 2025.<br>
-            </p></li>
-        </ul>  
-        <ul>
-            <li><p style = "margin:15px 0">
-            	Xinpeng Ti, Wentao Ye, Zhifang Zhang, Junbo Zhao, Chang Yao, Lei Feng, <b>Haobo Wang*</b>.<br>
-                Towards Reverse Engineering of Language Models: A Survey.<br>
-                <i>The Conference on Empirical Methods in Natural Language Processing (<b>EMNLP-Findings</b>)</i>, 2025.<br>
-            </p></li>
-        </ul>  
-        <ul>
-            <li><p style = "margin:15px 0">
-            	Liyao Li, Jiaming Tian, Hao Chen, Wentao Ye, Chao Ye, <b>Haobo Wang</b>, NINGTAO WANG, Xing Fu, Gang Chen, Junbo Zhao.<br>
-                LongTableBench: Benchmarking Long-Context Table Reasoning across Real-World Formats and Domains.<br>
-                <i>The Conference on Empirical Methods in Natural Language Processing (<b>EMNLP-Findings</b>)</i>, 2025.<br>
-            </p></li>
-        </ul>  
-        <ul>
-            <li><p style = "margin:15px 0">
-            	Maosheng Qin, Renyu Zhu, Mingxuan Xia, Chenchenkai, Zhen Zhu, Minmin Lin, <br>Junbo Zhao, Lu Xu, Changjie Fan, Runze Wu, <b>Haobo Wang*</b>.<br>
-                CrowdAgent: Multi-Agent Managed Multi-Source Annotation System.<br>
-                <i>The Conference on Empirical Methods in Natural Language Processing (<b>EMNLP-Demo</b>)</i>, 2025.<br>
-            </p></li>
-        </ul>  
-        <ul>
-            <li><p style = "margin:15px 0">
-                Mingxuan Xia, <b>Haobo Wang*</b>, Yixuan Li, Zewei Yu, Jindong Wang, Junbo Zhao, Runze Wu.<br>
-                Prompt Candidates, then Distill: A Teacher-Student Framework for LLM-driven Data Annotation.<br>
-                <i>Annual Meeting of the Association for Computational Linguistics (<b>ACL-Main</b>)</i>, 2025.<br>
-            </p></li>
-        </ul>
-        <ul>
-            <li><p style = "margin:15px 0">
-                Guangcheng Zhu, Ruixuan Xiao, <b>Haobo Wang</b>, Zhen Zhu, Gengyu Lyu, Junbo Zhao.<br>
-                Large Margin Representation Learning for Robust Cross-lingual Named Entity Recognition.<br>
-                <i>Annual Meeting of the Association for Computational Linguistics (<b>ACL-Main</b>)</i>, 2025.<br>
-            </p></li>
-        </ul>
-        <ul>
-            <li><p style = "margin:15px 0">
-                Pengzuo Wu, Yuhang Yang, Guangcheng Zhu, Chao Ye, Hong Gu, Xu Lu, Ruixuan Xiao, <br> Bowen Bao, Yijing He, Liangyu Zha, Wentao Ye, Junbo Zhao, <b>Haobo Wang*</b>.<br>
-                RealHiTBench: A Comprehensive Realistic Hierarchical Table Benchmark for Evaluating LLM-Based Table Analysis.<br>
-                <i>Annual Meeting of the Association for Computational Linguistics (<b>ACL-Findings</b>)</i>, 2025.<br>
-            </p></li>
-        </ul>
-        <ul>
-            <li><p style = "margin:15px 0">
-                Xuhang Zhu, Xiu Tang, Sai Wu, Jichen Li, <b>Haobo Wang</b>, Chang Yao, Quanqing Xu, Gang Chen. <br>
-                CoLA: Model Collaboration for Log-based Anomaly Detection.<br>
-                <i>International Conference on Very Large Databases (<b>VLDB</b>)</i>, 2025.<br>
-            </p></li>
-        </ul>
-        <ul>
-            <li><p style = "margin:15px 0">
-            	Seongheon Park, Xuefeng Du, Min-Hsuan Yeh, <b>Haobo Wang</b>, Yixuan Li.<br>
-                How to Steer LLM Latents for Hallucination Detection?<br>
-                <i>In Proceedings of The Forty-second International Conference on Machine Learning (<b>ICML</b>)</i>, 2025.<br>
-            </p></li>
-        </ul>
-        <ul>
-            <li><p style = "margin:15px 0">
-                Qiyu Zhong, Yi Shan, <b>Haobo Wang</b>, Zhen Yang, Gengyu Lyu.<br>
-                Tensorized Multi-View Multi-Label Classification via Laplace Tensor Rank.<br>
-                <i>In Proceedings of The Forty-second International Conference on Machine Learning (<b>ICML</b>)</i>, 2025.<br>
-            </p></li>
-        </ul>
-        <ul>
-            <li><p style = "margin:15px 0">
-                Yuena Lin, Haichun Cai, Jun-Yi Hang, <b>Haobo Wang</b>, Zhen Yang, Gengyu Lyu.<br>
-                Mitigating Local Cohesion and Global Sparseness in Graph Contrastive Learning with Fuzzy Boundaries.<br>
-                <i>In Proceedings of The Forty-second International Conference on Machine Learning (<b>ICML</b>)</i>, 2025.<br>
-            </p></li>
-        </ul>
-        <ul>
-            <li><p style = "margin:15px 0">
-                Qi Wei, Shuo He, Enneng Yang, Tingcong Liu, <b>Haobo Wang</b>, Lei Feng, Bo An.<br>
-                Representation Surgery in Model Merging with Probabilistic Modeling.<br>
-                <i>In Proceedings of The Forty-second International Conference on Machine Learning (<b>ICML</b>)</i>, 2025.<br>
-            </p></li>
-        </ul>
-	<ul>
-            <li><p style = "margin:15px 0">
-            	Yueying Li, Hanbin Zhao, Jiaqing Zhou, Guozhi Xu, Tianlei Hu, Gang Chen, <b>Haobo Wang*</b>.<br>
-                A Timestep-Adaptive Frequency-Enhancement Framework for Diffusion-based Image Super-Resolution.<br>
-                <i>Proceedings of the 34th International Joint Conference on Artificial Intelligence (<b>IJCAI</b>)</i>, 2025.<br>
-            </p></li>
-        </ul>
-        <ul>
-            <li><p style = "margin:15px 0">
-            	Rui Wang, Mingxuan Xia, <b>Haobo Wang</b>, Lei Feng, Junbo Zhao, Gang Chen, Chang Yao.<br>
-                Towards Robust Incremental Learning under Ambiguous Supervision.<br>
-                <i>Proceedings of the 34th International Joint Conference on Artificial Intelligence (<b>IJCAI</b>)</i>, 2025.<br>
-            </p></li>
-        </ul>
-        <ul>
-            <li><p style = "margin:15px 0">
-                Ziquan Wang, Mingxuan Xia, Xiangyu Ren, Jiaqing Zhou, Gengyu Lyu, Tianlei Hu, <b>Haobo Wang*</b>.<br>
-                Multi-Instance Multi-Label Classification from Crowdsourced Labels.<br>
-                <i>Proceedings of the AAAI Conference on Artificial Intelligence (<b>AAAI</b>)</i>, 2025.<br>
-            </p></li>
-        </ul>
-        <ul>
-            <li><p style = "margin:15px 0">
-                Lin Long, Xijun Gu, Xinjie Sun, Wentao Ye, <b>Haobo Wang</b>, Sai Wu, Gang Chen, Junbo Zhao.<br>
-                Bridging the Semantic Gap Between Text and Table: A Case Study on NL2SQL.<br>
-                <i>In Proceedings of the 13th International Conference on Learning Representations (<b>ICLR</b>)</i>, 2025.<br>
-            </p></li>
-        </ul>
-        <ul>
-            <li><p style = "margin:15px 0">
-                Yuena Lin, Yiyuan Wang, Gengyu Lyu, Yongjian Deng, Haichun Cai, Huibin Lin, <b>Haobo Wang</b>, Zhen Yang.<br>
-                Enhance Multi-View Classification Through Multi-Scale Alignment and Expanded Boundary.<br>
-                <i>In Proceedings of the 13th International Conference on Learning Representations (<b>ICLR</b>)</i>, 2025.<br>
-            </p></li>
-        </ul>
-        <ul>
-            <li><p style = "margin:15px 0">
-                Yuena Lin, Gengyu Lyu, Haichun Cai, Deng-Bao Wang, <b>Haobo Wang</b>, and Zhen Yang.<br>
-                Simplified Graph Contrastive Learning Model without Augmentation.<br>
-                <i>IEEE Transactions on Knowledge and Data Engineering (<b>TKDE</b>)</i>, 2025.
-            </p></li>
-        </ul>
-        <ul>
-            <li><p style = "margin:15px 0">
-                Jianan Yang, Yanming Zhang, <b>Haobo Wang*</b>, Gang Chen, Sai Wu, Junbo Zhao.<br>
-                CaCOM: Customizing Text-to-Image Diffusion Models in the Wild via Continual Active Selection.<br>
-                <i>Machine Learning Journal (<b>MLJ</b>)</i>, 2025.<br>
-            </p></li>
-        </ul>
-        <ul>
-            <li><p style = "margin:15px 0">
-                Jianan Yang, Chenchao Gao, Zhiqing Xiao, <b>Haobo Wang*</b>, Sai Wu, Gang Chen, Junbo Zhao.<br>
-                Locating What You Need: Towards Adapting Diffusion Models to OOD Concepts In-the-Wild.<br>
-                <i>Annual Conference on Neural Information Processing Systems (<b>NeurIPS</b>)</i>, 2024.<br>
-            </p></li>
-        </ul>
-        <ul>
-            <li><p style = "margin:15px 0">
-                Zhonghao Wang, Danyu Sun, Sheng Zhou, <b>Haobo Wang</b>, Jiapei Fan, Longtao Huang, Jiajun Bu.<br>
-                NoisyGL: A Comprehensive Benchmark for Graph Neural Networks under Label Noise.<br>
-                <i>Annual Conference on Neural Information Processing Systems (<b>NeurIPS</b>)</i>, 2024.<br>
-            </p></li>
-        </ul>
-        <ul>
-            <li><p style = "margin:15px 0">
-                Kai Tang, Junbo Zhao, Xiao Ding, Runze Wu, Lei Feng, Gang Chen, <b>Haobo Wang*</b>.<br>
-                Learning Geometry-Aware Representations for New Intent Discovery.<br>
-                <i>Annual Meeting of the Association for Computational Linguistics (<b>ACL-Main</b>)</i>, 2024.<br>
-            </p></li>
-        </ul>
-        <ul>
-            <li><p style = "margin:15px 0">
-                Lin Long, Rui Wang, Ruixuan Xiao, Junbo Zhao, Xiao Ding, Gang Chen, <b>Haobo Wang*</b>.<br>
-                On LLMs-Driven Synthetic Data Generation, Curation, and Evaluation: A Survey.<br>
-                <i>Annual Meeting of the Association for Computational Linguistics (<b>ACL-Findings</b>)</i>, 2024.<br>
-            </p></li>
-        </ul>
-        <ul>
-            <li><p style = "margin:15px 0">
-                Wentao Ye, Jiaqi Hu, Liyao Li, <b>Haobo Wang</b>, Gang Chen, Junbo Zhao.<br>
-                Data Contamination Calibration for Black-box LLMs.<br>
-                <i>Annual Meeting of the Association for Computational Linguistics (<b>ACL-Findings</b>)</i>, 2024.<br>
-            </p></li>
-        </ul>
-        <ul>
-            <li><p style = "margin:15px 0">
-                Qi Zhang, Yiming Zhang, <b>Haobo Wang</b>, Junbo Zhao.<br>
-                RECOST: External Knowledge Guided Data-efficient Instruction Tuning.<br>
-                <i>Annual Meeting of the Association for Computational Linguistics (<b>ACL-Findings</b>)</i>, 2024.<br>
-            </p></li>
-        </ul>
-        <ul>
-            <li><p style = "margin:15px 0">
-                Ruixuan Xiao, Wentao Ma, Ke Wang, Yuchuan Wu, Junbo Zhao, <b>Haobo Wang*</b>, Fei Huang, Yongbin Li.<br>
-                FlowBench: Revisiting and Benchmarking Workflow-Guided Planning for LLM-based Agents.<br>
-                <i>The Conference on Empirical Methods in Natural Language Processing (<b>EMNLP-Findings</b>)</i>, 2024.<br>
-            </p></li>
-        </ul>
-        <ul>
-            <li><p style = "margin:15px 0">
-                Cheng Peng, <b>Haobo Wang*</b>, Ke Chen, Lidan Shou, Chang Yao, Runze Wu, Gang Chen.<br>
-                CoMAL: Contrastive Active Learning for Multi-Label Text Classification.<br>
-                <i>ACM SIGKDD Conference on Knowledge Discovery and Data Mining (<b>KDD</b>)</i>, 2024.<br>
-            </p></li>
-        </ul>
-        <ul>
-            <li><p style = "margin:15px 0">
-                Mingxuan Xia, Zenan Huang, Runze Wu, Gengyu Lyu, Junbo Zhao, Gang Chen, <b>Haobo Wang*</b>.<br>
-                Unbiased Multi-Label Learning from Crowdsourced Annotations.<br>
-                <i>In Proceedings of The Forty-first International Conference on Machine Learning (<b>ICML</b>)</i>, 2024.<br>
-            </p></li>
-        </ul>
-        <ul>
-            <li><p style = "margin:15px 0">
-                Ruixuan Xiao, Lei Feng, Kai Tang, Junbo Zhao, Yixuan Li, Gang Chen, <b>Haobo Wang*</b>.<br>
-                Targeted Representation Alignment for Open-World Semi-Supervised Learning.<br>
-                <i>Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (<b>CVPR</b>)</i>, 2024.<br>
-            </p></li>
-        </ul>
-        <ul>
-            <li><p style = "margin:15px 0">
-                Lin Long, <b>Haobo Wang</b>, Zhijie Jiang, Lei Feng, Chang Yao, Gang Chen, Junbo Zhao.<br>
-                Positive-Unlabeled Learning by Latent Group-Aware Meta Disambiguation.<br>
-                <i>Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (<b>CVPR</b>)</i>, 2024.<br>
-            </p></li>
-        </ul>
-        <ul>
-            <li><p style = "margin:15px 0">
-            	Gengyu Lyu, Weiqi Kang, <b>Haobo Wang</b>, Zheng Li, Zhen Yang, Songhe Feng.<br>
-                Common-Individual Semantic Fusion for Multi-View Multi-Label Learning.<br>
-                <i>Proceedings of the International Joint Conference on Artificial Intelligence (<b>IJCAI</b>)</i>, 2024.<br>
-            </p></li>
-        </ul>
-        <ul>
-            <li><p style = "margin:15px 0">
-                Mingxuan Xia, Junbo Zhao, Gengyu Lyu, Zenan Huang, Tianlei Hu, Gang Chen, <b>Haobo Wang*</b>.<br>
-                A Separation and Alignment Framework for Black-box Domain Adaptation.<br>
-                <i>Proceedings of the AAAI Conference on Artificial Intelligence (<b>AAAI</b>)</i>, 2024.<br>
-            </p></li>
-        </ul>
-        <ul>
-            <li><p style = "margin:15px 0">
-                Chao Ye, Guoshan Lu, <b>Haobo Wang</b>, Liyao Li, Sai Wu, Gang Chen, Junbo Zhao.<br>
-                Towards Cross-Table Masked Pretraining for Web Data Mining.<br>
-                <i>In Proceedings of the The Web Conference (<b>WWW</b>)</i>, 2024.<br>
-            </p></li>
-        </ul>
-        <ul>
-            <li><p style = "margin:15px 0">
-                Ru Peng, Heming Zou, <b>Haobo Wang</b>, Yawen Zeng, Zenan Huang, Junbo Zhao.<br>
-                Energy-based Automated Model Evaluation.<br>
-                <i>In Proceedings of the 12th International Conference on Learning Representations (<b>ICLR</b>)</i>, 2024.<br>
-            </p></li>
-        </ul>
-        <ul>
-            <li><p style = "margin:15px 0">
-                Yiming Zhang, Hantao Yang, <b>Haobo Wang</b>, Junbo Zhao.<br>
-                Fast Adaptation via Prompted Data: An Efficient Cross-Domain Fine-tuning Method for Large Language Models.<br>
-                <i>International Conference on Computational Linguistics (<b>COLING</b>)</i>, 2024.<br>
-            </p></li>
-        </ul>
-        <ul>
-            <li><p style = "margin:15px 0">
-                <b>Haobo Wang</b>, Ruixuan Xiao, Yixuan Li, Lei Feng, Gang Niu, Gang Chen, Junbo Zhao.<br>
-                PiCO+: Contrastive Label Disambiguation for Robust Partial Label Learning.<br>
-                <i>IEEE Transactions on Pattern Analysis and Machine Intelligence (<b>TPAMI</b>)</i>, 2024.<br>
-            </p></li>
-        </ul>
-        <ul>
-            <li><p style = "margin:15px 0">
-		Beibei Li, Yiyuan Zheng, Beihong Jin, Tao Xiang, <b>Haobo Wang</b>, Lei Feng.<br>
-                AsyCo: An Asymmetric Dual-task Co-training Model for Partial-label Learning.<br>
-                <i>Science China Information Sciences (<b>SCIS</b>)</i>, 2024.<br>
-            </p></li>
-        </ul>
-        <ul>
-            <li><p style = "margin:15px 0">
-                <b>Haobo Wang</b>, Cheng Peng, Hede Dong, Lei Feng, Weiwei Liu, Tianlei Hu, Ke Chen, Gang Chen.<br>
-                On the Value of Head Labels in Multi-Label Text Classification.<br>
-                <i>ACM Transactions on Knowledge Discovery from Data (<b>TKDD</b>)</i>, 2024.<br>
-            </p></li>
-        </ul>
-        <ul>
-            <li><p style = "margin:15px 0">
-                Cheng Peng, <b>Haobo Wang</b>, Jue Wang, Lidan Shou, Ke Chen, Gang Chen, Chang Yao.<br>
-                Learning Label-Adaptive Representation for Large-Scale Multi-Label Text Classification.<br>
-                <i>IEEE Transactions on Speech and Audio Processing (<b>TASLP</b>)</i>, 2024.<br>
-            </p></li>
-        </ul>
-        <ul>
-            <li><p style = "margin:15px 0">
-                Jianan Yang, Jimin Tan, <b>Haobo Wang</b>, Gang Chen, Sai Wu, Junbo Zhao.<br>
-                Shift Guided Active Learning.<br>
-                <i>Machine Learning Journal (<b>MLJ</b>)</i>, 2024.<br>
-            </p></li>
-        </ul>
-        <ul>
-            <li><p style = "margin:15px 0">
-                Zhen Zhu, Yibo Wang, Shouqing Yang, Lin Long, Runze Wu, Xiu Tang, Junbo Zhao, <b>Haobo Wang*</b>. <br>
-                CORAL: Collaborative Automatic Labeling System based on Large Language Models.<br>
-                <i>International Conference on Very Large Databases (<b>VLDB-Demo</b>)</i>, 2024.<br>
-            </p></li>
-        </ul>
-        <ul>
-            <li><p style = "margin:15px 0">
-            	Ruixuan Xiao, Yiwen Dong, Junbo Zhao, Runze Wu, Minmin Lin, Gang Chen, <b>Haobo Wang*</b>.<br>
-                FreeAL: Towards Human-Free Active Learning in the Era of Large Language Models.<br>
-                <i>The Conference on Empirical Methods in Natural Language Processing (<b>EMNLP-Main</b>)</i>, 2023.<br>
-            </p></li>
-        </ul>  
-        <ul>
-            <li><p style = "margin:15px 0">
-            	Peng Fu, Yiming Zhang, <b>Haobo Wang</b>, Weikang Qiu, Junbo Zhao.<br>
-                Revisiting the Knowledge Injection Frameworks.<br>
-                <i>The Conference on Empirical Methods in Natural Language Processing (<b>EMNLP-Main</b>)</i>, 2023.<br>
-            </p></li>
-        </ul>  
-        <ul>
-            <li><p style = "margin:15px 0">
-            	<b>Haobo Wang</b>, Yiwen Dong, Ruixuan Xiao, Fei Huang, Gang Chen, Junbo Zhao.<br>
-                Debiased and Denoised Entity Recognition from Distant Supervision.<br>
-                <i>Thirty-seventh Conference on Neural Information Processing Systems (<b>NeurIPS</b>)</i>, 2023.<br>
-            </p></li>
-        </ul>  
-        <ul>
-            <li><p style = "margin:15px 0">
-            	Zhiqing Xiao, <b>Haobo Wang</b>, Ying Jin, Lei Feng, Gang Chen, Fei Huang, Junbo Zhao.<br>
-                SPA: A Graph Spectral Alignment Perspective for Domain Adaptation.<br>
-                <i>Thirty-seventh Conference on Neural Information Processing Systems (<b>NeurIPS</b>)</i>, 2023.<br>
-            </p></li>
-        </ul>  
-        <ul>
-            <li><p style = "margin:15px 0">
-            	Xin Cheng, Yuzhou Cao, <b>Haobo Wang</b>, Hongxin Wei, Bo An, Lei Feng.<br>
-                Regression with Cost-based Rejection.<br>
-                <i>Thirty-seventh Conference on Neural Information Processing Systems (<b>NeurIPS</b>)</i>, 2023.<br>
-            </p></li>
-        </ul>  
-        <ul>
-            <li><p style = "margin:15px 0">
-            	Zenan Huang, <b>Haobo Wang</b>, Junbo Zhao, Nenggan Zheng.<br>
-                iDAG: Invariant DAG Searching for Domain Generalization.<br>
-                <i>Proceedings of the International Conference on Computer Vision (<b>ICCV</b>)</i>, 2023.<br>
-            </p></li>
-        </ul>  
-        <ul>
-            <li><p style = "margin:15px 0">
-            	Ru Peng, Qiuyang Duan, <b>Haobo Wang</b>, Jiachen Ma, Yanbo Jiang, Yongjun Tu, Xiu Jiang, Junbo Zhao.<br>
-                CAME: Contrastive Automatic Model Evaluation.<br>
-                <i>Proceedings of the International Conference on Computer Vision (<b>ICCV</b>)</i>, 2023.<br>
-            </p></li>
-        </ul>
-        <ul>
-            <li><p style = "margin:15px 0">
-            	Jianan Yang, <b>Haobo Wang</b>, Sai Wu, Gang Chen, Junbo Zhao.<br>
-                Towards Controlled Data Augmentations for Active Learning.<br>
-                <i>In Proceedings of The Fortieth International Conference on Machine Learning (<b>ICML</b>)</i>, 2023.<br>
-            </p></li>
-        </ul>
-        <ul>
-            <li><p style = "margin:15px 0">
-            	<b>Haobo Wang</b>, Shisong Yang, Gengyu Lyu, Weiwei Liu, Tianlei Hu, Ke Chen, Songhe Feng, Gang Chen.<br>
-                Deep Partial Multi-Label Learning with Graph Disambiguation.<br>
-                <i>Proceedings of the 32nd International Joint Conference on Artificial Intelligence (<b>IJCAI</b>)</i>, 2023.<br>
-            </p></li>
-        </ul>
-        <ul>
-            <li><p style = "margin:15px 0">
-            	Ruixuan Xiao, Yiwen Dong, <b>Haobo Wang*</b>, Lei Feng, Runze Wu, Gang Chen, Junbo Zhao.<br>
-                ProMix: Combating Label Noise via Maximizing Clean Sample Utility.<br>
-                <i>Proceedings of the 32nd International Joint Conference on Artificial Intelligence (<b>IJCAI</b>)</i>, 2023.<br>
-		   <font color="#D62A05">(Ranked 1st (all tasks) in the Learning and Mining with Noisy Labels Challenge in IJCAI 2022)</font><br>
-            </p></li>
-        </ul>
-        <ul>
-            <li><p style = "margin:15px 0">
-            	Zenan Huang, <b>Haobo Wang</b>, Junbo Zhao, Nenggan Zheng.<br>
-                Latent Processes Identification From Multi-View Time Series.<br>
-                <i>Proceedings of the 32nd International Joint Conference on Artificial Intelligence (<b>IJCAI</b>)</i>, 2023.<br>
-            </p></li>
-        </ul>
-        <ul>
-            <li><p style = "margin:15px 0">
-            	Guoshan Lu, <b>Haobo Wang</b>, Saisai Yang, Jing Yuan, Guozheng Yang, Cheng Zang, Gang Chen, Junbo Zhao.<br>
-                Catch: Collaborative Feature Set Search for Automated Feature Engineering.<br>
-                <i>In Proceedings of the The Web Conference (<b>WWW</b>)</i>, 2023.<br>
-            </p></li>
-        </ul>
-        <ul>
-            <li><p style = "margin:15px 0">
-            	Liyao Li, <b>Haobo Wang</b>, Liangyu Zha, Qingyi Huang, Sai Wu, Gang Chen, Junbo Zhao.<br>
-                Learning a Data-Driven Policy Network for Pre-Training Automated Feature Engineering.<br>
-                <i>In Proceedings of the 11th International Conference on Learning Representations (<b>ICLR</b>)</i>, 2023.<br>
-		    <font color="#D62A05">(This paper was selected for <b>Spotlight</b> presentation, top 25%.)</font><br>
-            </p></li>
-        </ul>
-        <ul>
-            <li><p style = "margin:15px 0">
-                Senlin Shu, Shuo He, <b>Haobo Wang</b>, Hongxin Wei, Tao Xiang, Lei Feng.<br>
-                A Generalized Unbiased Risk Estimator for Learning with Augmented Classes.<br>
-                <i>Proceedings of the AAAI Conference on Artificial Intelligence (<b>AAAI</b>)</i>, 2023.<br>
-            </p></li>
-        </ul>
-        <ul>
-            <li><p style = "margin:15px 0">
-                Senlin Shu, <b>Haobo Wang</b>, Zhuowei Wang, Bo Han, Tao Xiang, Bo An, Lei Feng.<br>
-                Online Binary Classification from Similar and Dissimilar Data.<br>
-                <i>Machine Learning Journal (<b>MLJ</b>)</i>, 2023.
-            </p></li>
-        </ul>
-        <ul>
-            <li><p style = "margin:15px 0">
-                <b>Haobo Wang</b>, Mingxuan Xia, Yixuan Li, Yuren Mao, Lei Feng, Gang Chen, Junbo Zhao.<br>
-                SoLar: Sinkhorn Label Refinery for Imbalanced Partial-Label Learning.<br>
-                <i>The Thirty-Sixth Conference on Neural Information Processing Systems (<b>NeurIPS</b>)</i>, 2022.<br>
-            </p></li>
-        </ul>
-        <ul>
-            <li><p style = "margin:15px 0">
-                Yuren Mao, Yaobo Liang, Nan Duan, <b>Haobo Wang</b>, Kai Wang, Lu Chen, Yunjun Gao.<br>
-                Less-forgetting Multi-lingual Fine-tuning.<br>
-                <i>The Thirty-Sixth Conference on Neural Information Processing Systems (<b>NeurIPS</b>)</i>, 2022.<br>
-            </p></li>
-        </ul>
-        <ul>
-            <li><p style = "margin:15px 0">
-                <b>Haobo Wang</b>, Ruixuan Xiao, Yixuan Li, Lei Feng, Gang Niu, Gang Chen, Junbo Zhao.<br>
-                PiCO: Contrastive Label Disambiguation for Partial Label Learning.<br>
-                <i>In Proceedings of the 10th International Conference on Learning Representations (<b>ICLR</b>)</i>, 2022.<br>
-		    <font color="#D62A05">(This paper was selected for <b>Outstanding Paper Award Honorable Mention</b>, top 10 in 3391 submissions.)</font><br>
-            </p></li>
-        </ul>
-        <ul>
-            <li><p style = "margin:15px 0">
-                Xiang Wen, Shiwei Zhao, <b>Haobo Wang*</b>, Runze Wu, Manhu Qu, Tianlei Hu, Gang Chen, Jianrong Tao, Changjie Fan<br>
-                Multi-Source Multi-Label Learning for User Profiling in Online Games.<br>
-                <i>IEEE Transactions on Multimedia (<b>TMM</b>)</i>, 2022.<br>
-            </p></li>
-        </ul>
-        <ul>
-            <li><p style = "margin:15px 0">
-                Weiwei Liu, <b>Haobo Wang</b>, Xiaobo Shen, Ivor Tsang.<br>
-                The Emerging Trends of Multi-Label Learning.<br>
-                <i>IEEE Transactions on Pattern Analysis and Machine Intelligence (<b>TPAMI</b>)</i>, 2021.<br>
-		<font color="#D62A05">(A comprehensive survey on multi-label learning.)</font><br>
-            </p></li>
-        </ul>
-        <ul>
-            <li><p style = "margin:15px 0">
-                Zhao Li, Yuying Xing, Jiaming Huang, <b>Haobo Wang</b>, Jianliang Gao, Guoxian Yu.<br>
-                Large-scale Online Multi-view Graph Neural Network and Applications.<br>
-                <i>Future Generation Computer Systems (<b>FGCS</b>)</i>, 2021.
-            </p></li>
-        </ul>
-        <ul>
-            <li><p style = "margin:15px 0">
-                <b>Haobo Wang</b>, Zhao Li, Jiaming Huang, Pengrui Hui, Weiwei Liu, Tianlei Hu, Gang Chen.<br> 
-                Collaboration Based Multi-Label Propagation for Fraud Detection.<br> 
-                <i>Proceedings of the Twenty-Ninth International Joint Conference on Artificial Intelligence (<b>IJCAI</b>)</i>, 2020.<br>
-            </p></li>
-        </ul>
-        <ul>
-            <li><p style = "margin:15px 0">
-                <b>Haobo Wang</b>, Weiwei Liu, Yang Zhao, Tianlei Hu, Ke Chen, Gang Chen.<br> 
-                Learning From Multi-Dimensional Partial Labels. <br> 
-                <i>Proceedings of the Twenty-Ninth International Joint Conference on Artificial Intelligence (<b>IJCAI</b>)</i>, 2020.<br>
-            </p></li>
-        </ul>
-        <ul>
-            <li><p style = "margin:15px 0">
-                <b>Haobo Wang</b>, Chen Chen, Weiwei Liu, Ke Chen, Tianlei Hu, Gang Chen.<br>
-                Incorporating Label Embedding and Feature Augmentation for Multi-dimensional Classification.<br>
-                <i>Proceedings of the AAAI Conference on Artificial Intelligence (<b>AAAI</b>)</i>, 2020.
-            </p></li>
-        </ul>
-        <ul>
-            <li><p style = "margin:15px 0">
-                <b>Haobo Wang</b>, Yuzhou Qiang, Chen Chen, Weiwei Liu, Tianlei Hu, Zhao Li, Gang Chen.<br> 
-                Online Partial Label Learning. <br> 
-                <i>Joint European Conference on Machine Learning and Knowledge Discovery in Databases (<b>ECML</b>)</i>, 2020.<br>
-            </p></li>
-        </ul>
-        <ul>
-            <li><p style = "margin:15px 0">
-                Congcong Ge, Yunjun Gao, Xiaoye Miao, Bin Yao, <b>Haobo Wang</b>.<br>
-                A Hybrid Data Cleaning Framework using Markov Logic Networks.<br>
-                <i>IEEE Transactions on Knowledge and Data Engineering (<b>TKDE</b>)</i>, 2020.
-            </p></li>
-        </ul>
-        <ul>
-            <li><p style = "margin:15px 0">
-                <b>Haobo Wang</b>, Weiwei Liu, Yang Zhao, Chen Zhang, Tianlei Hu, Gang Chen.<br> 
-                Discriminative and Correlative Partial Multi-label Learning. <br> 
-                <i>Proceedings of the Twenty-Eighth International Joint Conference on Artificial Intelligence (<b>IJCAI</b>)</i>, 2019.<br>
-            </p></li>
-        </ul>
-        <ul>
-            <li><p style = "margin:15px 0">
-                Chen Chen, <b>Haobo Wang</b>, Weiwei Liu, Xingyuan Zhao, Tianlei Hu, Gang Chen.<br> 
-                Two-stage Label Embedding via Neural Factorization Machine for Multi-label Classification. <br> 
-                <i>Proceedings of the AAAI Conference on Artificial Intelligence (<b>AAAI</b>)</i>, 2019.<br>
-            </p></li>
-        </ul>
-        <br>
-        <hr>
-        <br>
-    </div>
-</div>
+    <section class="content-section" id="publications">
+      <div class="section-title"><h2>Selected publications</h2><a href="publications.html#Publications">Full list</a></div>
+      <p class="note"><sup>*</sup> Corresponding author</p>
 
-</td>
-</tr>
-</table>
+      <div class="papers selected-papers legacy-selection">
+        <article><p class="venue">SCIS 2026</p><h3>DataXman: Selecting and Mixing Pretraining Data via Bilingual Mixture-of-Experts Data Manager</h3><p>Ru Peng, Jinyang Zhang, Yawen Zeng, et al., <strong>Haobo Wang*</strong>, et al.</p></article>
+        <article><p class="venue">ICLR 2026</p><h3>TraPO: A Semi-Supervised Reinforcement Learning Framework for Boosting LLM Reasoning</h3><p>Shenzhi Yang, Guangcheng Zhu, <strong>Haobo Wang*</strong>, et al.</p></article>
+        <article><p class="venue">ICLR 2026</p><h3>Stop Unnecessary Reflection: Training LRMs for Efficient Reasoning with Adaptive Reflection and Length Coordinated Penalty</h3><p>Zewei Yu, Lirong Gao, Sheng Guo, et al., <strong>Haobo Wang*</strong></p></article>
+        <article><p class="venue">KDD 2026</p><h3>FLaG: Fine-Grained Latent Grouping for Hallucination Detection</h3><p>Wentao Ye, Liyao Li, Zhiqing Xiao, et al., <strong>Haobo Wang*</strong></p></article>
+        <article><p class="venue">ICML 2026</p><h3>Awakening Visual Reasoning: Mitigating Post-Training Failure in Vision-Text Compression</h3><p>Xing Xi, Liyao Li, Hao Chen, et al., <strong>Haobo Wang*</strong></p></article>
+        <article><p class="venue">ACL 2026</p><h3>Everyone is Unique: Towards Behaviorally Heterogeneous Negotiation Dialogue Systems</h3><p>Yuhang Yang, Kai Tang, Chao Ye, <strong>Haobo Wang*</strong>, et al.</p></article>
+        <article><p class="venue">ACL Findings 2026</p><h3>FinMRAGBench: A Realistic and Complex Benchmark for Multi-Modal RAG in Financial Document Analysis</h3><p>Shouqing Yang, Qi Zhang, Yuhang Yang, et al., <strong>Haobo Wang*</strong>, et al.</p></article>
+        <article><p class="venue">AAAI 2026</p><h3>An Invariant Latent Space Perspective on Language Model Inversion</h3><p>Wentao Ye, Jiaqi Hu, <strong>Haobo Wang*</strong>, et al.</p></article>
+
+        <article><p class="venue">NeurIPS 2025</p><h3>Harnessing Feature Resonance under Arbitrary Target Alignment for Out-of-Distribution Node Detection</h3><p>Shenzhi Yang, Junbo Zhao, Sharon Li, et al., <strong>Haobo Wang*</strong></p></article>
+        <article><p class="venue">NeurIPS 2025</p><h3>Table as a Modality for Large Language Models</h3><p>Liyao Li, Chao Ye, Wentao Ye, et al., <strong>Haobo Wang</strong>, et al.</p></article>
+        <article><p class="venue">EMNLP 2025</p><h3>LeTS: Learning to Think-and-Search via Process-and-Outcome Reward Hybridization</h3><p>Qi Zhang, Shouqing Yang, Lirong Gao, et al., <strong>Haobo Wang*</strong>, et al.</p></article>
+        <article><p class="venue">EMNLP Findings 2025</p><h3>LongTableBench: Benchmarking Long-Context Table Reasoning across Real-World Formats and Domains</h3><p>Liyao Li, Jiaming Tian, Hao Chen, et al., <strong>Haobo Wang</strong>, et al.</p></article>
+        <article><p class="venue">EMNLP Demo 2025</p><h3>CrowdAgent: Multi-Agent Managed Multi-Source Annotation System</h3><p>Maosheng Qin, Renyu Zhu, Mingxuan Xia, et al., <strong>Haobo Wang*</strong></p></article>
+        <article><p class="venue">ACL 2025</p><h3>Prompt Candidates, then Distill: A Teacher-Student Framework for LLM-driven Data Annotation</h3><p>Mingxuan Xia, <strong>Haobo Wang*</strong>, Sharon Li, et al.</p></article>
+        <article><p class="venue">ACL Findings 2025</p><h3>RealHiTBench: A Comprehensive Realistic Hierarchical Table Benchmark for Evaluating LLM-Based Table Analysis</h3><p>Pengzuo Wu, Yuhang Yang, Guangcheng Zhu, et al., <strong>Haobo Wang*</strong></p></article>
+        <article class="award-paper"><p class="venue">VLDB 2025</p><h3>CoLA: Model Collaboration for Log-based Anomaly Detection</h3><p>Xuhang Zhu, Xiu Tang, Sai Wu, Jichen Li, <strong>Haobo Wang</strong>, et al.</p><span class="award">Best of VLDB Journal</span></article>
+        <article><p class="venue">ICML 2025</p><h3>How to Steer LLM Latents for Hallucination Detection?</h3><p>Seongheon Park, Xuefeng Du, Min-Hsuan Yeh, <strong>Haobo Wang</strong>, Sharon Li</p></article>
+        <article><p class="venue">AAAI 2025</p><h3>Multi-Instance Multi-Label Classification from Crowdsourced Labels</h3><p>Ziquan Wang, Mingxuan Xia, Xiangyu Ren, et al., <strong>Haobo Wang*</strong></p></article>
+        <article><p class="venue">ICLR 2025</p><h3>Bridging the Semantic Gap Between Text and Table: A Case Study on NL2SQL</h3><p>Lin Long, Xijun Gu, Xinjie Sun, et al., <strong>Haobo Wang</strong>, et al.</p></article>
+
+        <article><p class="venue">NeurIPS 2024</p><h3>Locating What You Need: Towards Adapting Diffusion Models to OOD Concepts In-the-Wild</h3><p>Jianan Yang, Chenchao Gao, Zhiqing Xiao, <strong>Haobo Wang*</strong>, et al.</p></article>
+        <article><p class="venue">ACL 2024</p><h3>Learning Geometry-Aware Representations for New Intent Discovery</h3><p>Kai Tang, Junbo Zhao, Xiao Ding, et al., <strong>Haobo Wang*</strong></p></article>
+        <article><p class="venue">ACL Findings 2024</p><h3>On LLMs-Driven Synthetic Data Generation, Curation, and Evaluation: A Survey</h3><p>Lin Long, Rui Wang, Ruixuan Xiao, et al., <strong>Haobo Wang*</strong></p></article>
+        <article><p class="venue">EMNLP Findings 2024</p><h3>FlowBench: Revisiting and Benchmarking Workflow-Guided Planning for LLM-based Agents</h3><p>Ruixuan Xiao, Wentao Ma, Ke Wang, et al., <strong>Haobo Wang*</strong>, et al.</p></article>
+        <article><p class="venue">KDD 2024</p><h3>CoMAL: Contrastive Active Learning for Multi-Label Text Classification</h3><p>Cheng Peng, <strong>Haobo Wang*</strong>, et al.</p></article>
+        <article><p class="venue">ICML 2024</p><h3>Unbiased Multi-Label Learning from Crowdsourced Annotations</h3><p>Mingxuan Xia, Zenan Huang, Runze Wu, et al., <strong>Haobo Wang*</strong></p></article>
+        <article><p class="venue">CVPR 2024</p><h3>Targeted Representation Alignment for Open-World Semi-Supervised Learning</h3><p>Ruixuan Xiao, Lei Feng, Kai Tang, Junbo Zhao, Sharon Li, et al., <strong>Haobo Wang*</strong></p></article>
+        <article><p class="venue">AAAI 2024</p><h3>A Separation and Alignment Framework for Black-box Domain Adaptation</h3><p>Mingxuan Xia, Junbo Zhao, Gengyu Lyu, et al., <strong>Haobo Wang*</strong></p></article>
+        <article><p class="venue">WWW 2024</p><h3>Towards Cross-Table Masked Pretraining for Web Data Mining</h3><p>Chao Ye, Guoshan Lu, <strong>Haobo Wang</strong>, et al.</p></article>
+        <article class="award-paper"><p class="venue">TPAMI 2024</p><h3>PiCO+: Contrastive Label Disambiguation for Robust Partial Label Learning</h3><p><strong>Haobo Wang</strong>, Ruixuan Xiao, Sharon Li, et al.</p></article>
+        <article><p class="venue">TKDD 2024</p><h3>On the Value of Head Labels in Multi-Label Text Classification</h3><p><strong>Haobo Wang</strong>, Cheng Peng, Hede Dong, et al.</p></article>
+        <article><p class="venue">VLDB Demo 2024</p><h3>CORAL: Collaborative Automatic Labeling System based on Large Language Models</h3><p>Zhen Zhu, Yibo Wang, Shouqing Yang, et al., <strong>Haobo Wang*</strong></p></article>
+
+        <article><p class="venue">NeurIPS 2023</p><h3>Debiased and Denoised Entity Recognition from Distant Supervision</h3><p><strong>Haobo Wang</strong>, Yiwen Dong, Ruixuan Xiao, et al.</p></article>
+        <article class="award-paper"><p class="venue">IJCAI 2023</p><h3>ProMix: Combating Label Noise via Maximizing Clean Sample Utility</h3><p>Ruixuan Xiao, Yiwen Dong, <strong>Haobo Wang*</strong>, et al.</p><span class="award">1st Place, Learning and Mining with Noisy Labels Challenge</span></article>
+        <article><p class="venue">NeurIPS 2022</p><h3>SoLar: Sinkhorn Label Refinery for Imbalanced Partial-Label Learning</h3><p><strong>Haobo Wang</strong>, Mingxuan Xia, Sharon Li, et al.</p></article>
+        <article class="award-paper"><p class="venue">ICLR 2022</p><h3>PiCO: Contrastive Label Disambiguation for Partial Label Learning</h3><p><strong>Haobo Wang</strong>, Ruixuan Xiao, Sharon Li, et al.</p><span class="award">Outstanding Paper Award Honorable Mention</span></article>
+      </div>
+      <div class="papers selected-papers">
+        <article><p class="venue">NeurIPS 2026</p><h3>Smart Picks in the Dark: Towards Efficient RLVR for Reasoning via Tracing Metacognitive Pivots</h3><p>Guangcheng Zhu, Shenzhi Yang, <strong>Haobo Wang*</strong>, Xing Zheng, Yingfan Ma, Xuening Feng, Zhongqi Chen, Bowen Song, Weiqiang Wang, Gang Chen.</p></article>
+        <article><p class="venue">EMNLP 2026</p><h3>PROBE: Prospective Retrieval with Oracle-Based End-Goal Distillation for Multi-Hop Question Answering</h3><p>Xu Lu, Zhengqing Zang, Binhui Yao, Luwei Yang, Ruimin Chen, Zeng Wang, <strong>Haobo Wang*</strong>.</p></article>
+        <article><p class="venue">EMNLP 2026</p><h3>DeltaMem: Towards Agentic Memory Management via Reinforcement Learning</h3><p>Qi Zhang, Shen Huang, Liuchu, Shouqing Yang, Xiaomeng Hu, Pengjun Xie, <strong>Haobo Wang</strong>, Junbo Zhao.</p></article>
+        <article><p class="venue">EMNLP Findings 2026</p><h3>SkillComposer: Learning to Evolve Agent Skills for Specification and Generalization</h3><p>Qi Zhang, Zhaopeng Feng, Xiaonan Shi, Xiaomeng Hu, Liuchu, Pengjun Xie, Xiaobin Wang, Bryan Hooi, <strong>Haobo Wang</strong>, Junbo Zhao.</p></article>
+        <article><p class="venue">SCIS 2026</p><h3>DataXman: Selecting and Mixing Pretraining Data via Bilingual Mixture-of-Experts Data Manager</h3><p>Ru Peng, Jinyang Zhang, Yawen Zeng, Kexin Yang, Junyang Lin, <strong>Haobo Wang*</strong>, Gang Chen, Jingren Zhou, Dayiheng Liu, Junbo Zhao.</p></article>
+        <article><p class="venue">ICLR 2026</p><h3>TraPO: A Semi-Supervised Reinforcement Learning Framework for Boosting LLM Reasoning</h3><p>Shenzhi Yang, Guangcheng Zhu, <strong>Haobo Wang*</strong>, Xing Zheng, Yingfan Ma, Zhongqi Chen, Bowen Song, Weiqiang Wang, Junbo Zhao, Gang Chen.</p></article>
+        <article><p class="venue">ICLR 2026</p><h3>Stop Unnecessary Reflection: Training LRMs for Efficient Reasoning with Adaptive Reflection and Length Coordinated Penalty</h3><p>Zewei Yu, Lirong Gao, Sheng Guo, Yuke Zhu, Bo Zheng, Junbo Zhao, <strong>Haobo Wang*</strong>.</p></article>
+        <article><p class="venue">KDD 2026</p><h3>FLaG: Fine-Grained Latent Grouping for Hallucination Detection</h3><p>Wentao Ye, Liyao Li, Zhiqing Xiao, Muzhi Zhu, Jiaqi Hu, Zhanming Shen, Xiaomeng Hu, Sean Du, <strong>Haobo Wang*</strong>.</p></article>
+        <article><p class="venue">ICML 2026</p><h3>Awakening Visual Reasoning: Mitigating Post-Training Failure in Vision-Text Compression</h3><p>Xing Xi, Liyao Li, Hao Chen, Ningtao Wang, Peixian Chen, Peilin Tong, Xing Fu, Yu Cheng, <strong>Haobo Wang*</strong>, Gang Chen, Junbo Zhao, Ronghua Luo.</p></article>
+        <article><p class="venue">ACL 2026</p><h3>Everyone is Unique: Towards Behaviorally Heterogeneous Negotiation Dialogue Systems</h3><p>Yuhang Yang, Kai Tang, Chao Ye, <strong>Haobo Wang*</strong>, Qiqi Luo, Jin Guang Zheng, Zhixin Zhang.</p></article>
+        <article><p class="venue">ACL Findings 2026</p><h3>FinMRAGBench: A Realistic and Complex Benchmark for Multi-Modal RAG in Financial Document Analysis</h3><p>Shouqing Yang, Qi Zhang, Yuhang Yang, Ruikang Xu, Yuwei Hou, Zhulin Jia, Lirong Gao, <strong>Haobo Wang*</strong>, Jinglei Chen, Jiexiang Wang, Sheng Guo, Bo Zheng, Gang Chen.</p></article>
+        <article><p class="venue">AAAI 2026</p><h3>An Invariant Latent Space Perspective on Language Model Inversion</h3><p>Wentao Ye, Jiaqi Hu, <strong>Haobo Wang*</strong>, Xinpeng Ti, Zhiqing Xiao, Hao Chen, Liyao Li, Lei Feng, Sai Wu, Junbo Zhao.</p></article>
+        <article><p class="venue">NeurIPS 2025</p><h3>Harnessing Feature Resonance under Arbitrary Target Alignment for Out-of-Distribution Node Detection</h3><p>Shenzhi Yang, Junbo Zhao, Sharon Li, Shouqing Yang, Dingyu Yang, Xiaofang Zhang, <strong>Haobo Wang*</strong>.</p></article>
+        <article><p class="venue">NeurIPS 2025</p><h3>Table as a Modality for Large Language Models</h3><p>Liyao Li, Chao Ye, Wentao Ye, Yifei Sun, Zhe Jiang, <strong>Haobo Wang</strong>, Jiaming Tian, Yiming Zhang, Ningtao Wang, Xing Fu, Gang Chen, Junbo Zhao.</p></article>
+        <article><p class="venue">EMNLP 2025</p><h3>LeTS: Learning to Think-and-Search via Process-and-Outcome Reward Hybridization</h3><p>Qi Zhang, Shouqing Yang, Lirong Gao, Hao Chen, Xiaomeng Hu, Jinglei Chen, Jiexiang Wang, Sheng Guo, Bo Zheng, <strong>Haobo Wang*</strong>, Junbo Zhao.</p></article>
+        <article><p class="venue">EMNLP Findings 2025</p><h3>LongTableBench: Benchmarking Long-Context Table Reasoning across Real-World Formats and Domains</h3><p>Liyao Li, Jiaming Tian, Hao Chen, Wentao Ye, Chao Ye, <strong>Haobo Wang</strong>, Ningtao Wang, Xing Fu, Gang Chen, Junbo Zhao.</p></article>
+        <article><p class="venue">EMNLP Demo 2025</p><h3>CrowdAgent: Multi-Agent Managed Multi-Source Annotation System</h3><p>Maosheng Qin, Renyu Zhu, Mingxuan Xia, Chenchenkai, Zhen Zhu, Minmin Lin, Junbo Zhao, Lu Xu, Changjie Fan, Runze Wu, <strong>Haobo Wang*</strong>.</p></article>
+        <article><p class="venue">ACL 2025</p><h3>Prompt Candidates, then Distill: A Teacher-Student Framework for LLM-driven Data Annotation</h3><p>Mingxuan Xia, <strong>Haobo Wang*</strong>, Sharon Li, Zewei Yu, Jindong Wang, Junbo Zhao, Runze Wu.</p></article>
+        <article><p class="venue">ACL Findings 2025</p><h3>RealHiTBench: A Comprehensive Realistic Hierarchical Table Benchmark for Evaluating LLM-Based Table Analysis</h3><p>Pengzuo Wu, Yuhang Yang, Guangcheng Zhu, Chao Ye, Hong Gu, Xu Lu, Ruixuan Xiao, Bowen Bao, Yijing He, Liangyu Zha, Wentao Ye, Junbo Zhao, <strong>Haobo Wang*</strong>.</p></article>
+        <article class="award-paper"><p class="venue">VLDB 2025</p><h3>CoLA: Model Collaboration for Log-based Anomaly Detection</h3><p>Xuhang Zhu, Xiu Tang, Sai Wu, Jichen Li, <strong>Haobo Wang</strong>, Chang Yao, Quanqing Xu, Gang Chen.</p><span class="award">Best of VLDB Journal</span></article>
+        <article><p class="venue">ICML 2025</p><h3>How to Steer LLM Latents for Hallucination Detection?</h3><p>Seongheon Park, Xuefeng Du, Min-Hsuan Yeh, <strong>Haobo Wang</strong>, Sharon Li.</p></article>
+        <article><p class="venue">ICLR 2025</p><h3>Bridging the Semantic Gap Between Text and Table: A Case Study on NL2SQL</h3><p>Lin Long, Xijun Gu, Xinjie Sun, Wentao Ye, <strong>Haobo Wang</strong>, Sai Wu, Gang Chen, Junbo Zhao.</p></article>
+        <article><p class="venue">NeurIPS 2024</p><h3>Locating What You Need: Towards Adapting Diffusion Models to OOD Concepts In-the-Wild</h3><p>Jianan Yang, Chenchao Gao, Zhiqing Xiao, <strong>Haobo Wang*</strong>, Sai Wu, Gang Chen, Junbo Zhao.</p></article>
+        <article><p class="venue">ACL Findings 2024</p><h3>On LLMs-Driven Synthetic Data Generation, Curation, and Evaluation: A Survey</h3><p>Lin Long, Rui Wang, Ruixuan Xiao, Junbo Zhao, Xiao Ding, Gang Chen, <strong>Haobo Wang*</strong>.</p></article>
+        <article><p class="venue">EMNLP Findings 2024</p><h3>FlowBench: Revisiting and Benchmarking Workflow-Guided Planning for LLM-based Agents</h3><p>Ruixuan Xiao, Wentao Ma, Ke Wang, Yuchuan Wu, Junbo Zhao, <strong>Haobo Wang*</strong>, Fei Huang, Yongbin Li.</p></article>
+        <article><p class="venue">CVPR 2024</p><h3>Targeted Representation Alignment for Open-World Semi-Supervised Learning</h3><p>Ruixuan Xiao, Lei Feng, Kai Tang, Junbo Zhao, Sharon Li, Gang Chen, <strong>Haobo Wang*</strong>.</p></article>
+        <article><p class="venue">WWW 2024</p><h3>Towards Cross-Table Masked Pretraining for Web Data Mining</h3><p>Chao Ye, Guoshan Lu, <strong>Haobo Wang</strong>, Liyao Li, Sai Wu, Gang Chen, Junbo Zhao.</p></article>
+        <article><p class="venue">TPAMI 2024</p><h3>PiCO+: Contrastive Label Disambiguation for Robust Partial Label Learning</h3><p><strong>Haobo Wang</strong>, Ruixuan Xiao, Sharon Li, Lei Feng, Gang Niu, Gang Chen, Junbo Zhao.</p></article>
+        <article><p class="venue">TKDD 2024</p><h3>On the Value of Head Labels in Multi-Label Text Classification</h3><p><strong>Haobo Wang</strong>, Cheng Peng, Hede Dong, Lei Feng, Weiwei Liu, Tianlei Hu, Ke Chen, Gang Chen.</p></article>
+        <article><p class="venue">VLDB Demo 2024</p><h3>CORAL: Collaborative Automatic Labeling System based on Large Language Models</h3><p>Zhen Zhu, Yibo Wang, Shouqing Yang, Lin Long, Runze Wu, Xiu Tang, Junbo Zhao, <strong>Haobo Wang*</strong>.</p></article>
+        <article><p class="venue">NeurIPS 2023</p><h3>Debiased and Denoised Entity Recognition from Distant Supervision</h3><p><strong>Haobo Wang</strong>, Yiwen Dong, Ruixuan Xiao, Fei Huang, Gang Chen, Junbo Zhao.</p></article>
+        <article class="award-paper"><p class="venue">IJCAI 2023</p><h3>ProMix: Combating Label Noise via Maximizing Clean Sample Utility</h3><p>Ruixuan Xiao, Yiwen Dong, <strong>Haobo Wang*</strong>, Lei Feng, Runze Wu, Gang Chen, Junbo Zhao.</p><span class="award">(Ranked 1st (all tasks) in the Learning and Mining with Noisy Labels Challenge in IJCAI 2022)</span></article>
+        <article><p class="venue">NeurIPS 2022</p><h3>SoLar: Sinkhorn Label Refinery for Imbalanced Partial-Label Learning</h3><p><strong>Haobo Wang</strong>, Mingxuan Xia, Sharon Li, Yuren Mao, Lei Feng, Gang Chen, Junbo Zhao.</p></article>
+        <article class="award-paper"><p class="venue">ICLR 2022</p><h3>PiCO: Contrastive Label Disambiguation for Partial Label Learning</h3><p><strong>Haobo Wang</strong>, Ruixuan Xiao, Sharon Li, Lei Feng, Gang Niu, Gang Chen, Junbo Zhao.</p><span class="award">(This paper was selected for <strong>Outstanding Paper Award Honorable Mention</strong>, top 10 in 3391 submissions.)</span></article>
+      </div>
+    </section>
+
+    <section class="content-section" id="education">
+      <div class="section-title"><h2>Education</h2></div>
+      <div class="simple-list">
+        <div><span>2018–2023</span><p><strong>Ph.D. in Artificial Intelligence</strong><br>Zhejiang University · Advisors: Prof. <a href="https://person.zju.edu.cn/en/0098112" target="_blank" rel="noopener">Gang Chen</a> and Prof. Tianlei Hu</p></div>
+        <div><span>2017–2018</span><p><strong>Visiting Student</strong><br>University of New South Wales · Advisors: Prof. Xuemin Lin and Prof. <a href="https://sites.google.com/site/weiweiliuhomepage/" target="_blank" rel="noopener">Weiwei Liu</a></p></div>
+        <div><span>2014–2018</span><p><strong>B.E. in Computer Science</strong><br>Zhejiang University · Advisor: Prof. <a href="http://dbl.zju.edu.cn/~yjgao/index.html" target="_blank" rel="noopener">Yunjun Gao</a></p></div>
+      </div>
+    </section>
+
+    <section class="content-section" id="experience">
+      <div class="section-title"><h2>Experience</h2></div>
+      <div class="simple-list">
+        <div><span>2023–Now</span><p><strong>Assistant Professor · Ph.D. Supervisor</strong><br>School of Software Technology, Zhejiang University</p></div>
+        <div><span>2019–2020</span><p><strong>Research Intern</strong><br>Alibaba Group · Hangzhou, China</p></div>
+        <div><span>2018–2019</span><p><strong>Intern</strong><br>NetEase Inc. · Hangzhou, China</p></div>
+      </div>
+    </section>
+
+    <section class="content-section" id="honors">
+      <div class="section-title"><h2>Selected honors</h2></div>
+      <div class="simple-list">
+        <div><span>2025</span><p>WAIC Yunfan Award, Rising Star Nomination</p></div>
+        <div><span>2023</span><p>“Wu Wen-Jun” CAAI Outstanding Doctoral Dissertation</p></div>
+        <div><span>2023</span><p>ACM China Doctoral Dissertation Award (Hangzhou Chapter)</p></div>
+        <div><span>2022</span><p>ICLR Outstanding Paper Award Honorable Mention</p></div>
+        <div><span>2022</span><p>ICML Outstanding Reviewer</p></div>
+      </div>
+    </section>
+
+    <section class="content-section" id="service">
+      <div class="section-title"><h2>Academic service</h2></div>
+      <div class="service-grid">
+        <div><h3>Action Editor</h3><p>Transactions on Machine Learning Research</p></div>
+        <div><h3>Area Chair</h3><p>ICLR, ICML, NeurIPS, ACL, EMNLP</p></div>
+        <div><h3>Reviewer</h3><p>TPAMI, TKDE, TNNLS, TCSVT, Pattern Recognition</p></div>
+      </div>
+    </section>
+  </main>
+
+  <footer><span>© 2026 Haobo Wang</span><span>Last updated October 2026</span></footer>
 </body>
 </html>
