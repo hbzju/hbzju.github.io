@@ -62,6 +62,19 @@
           <div class="thread-meta"><span>01</span><span>Reasoning efficiency</span></div>
           <h3>Data-efficient RLVR</h3>
           <p class="thread-name">DE-Venus &amp; beyond</p>
+          <div class="thread-figure" role="img" aria-label="DE-Venus supervision lifecycle: select data, build weak supervision, and refine it during training">
+            <svg viewBox="0 0 260 96" aria-hidden="true">
+              <g class="figure-muted">
+                <circle cx="17" cy="28" r="3"/><circle cx="29" cy="18" r="3"/><circle cx="41" cy="32" r="3"/><circle cx="24" cy="42" r="3"/><circle cx="46" cy="50" r="3"/><circle cx="35" cy="61" r="3"/><circle cx="16" cy="57" r="3"/><circle cx="50" cy="15" r="3"/>
+              </g>
+              <path class="figure-arrow" d="M61 39H91"/><path class="figure-arrow-head" d="m86 34 6 5-6 5"/>
+              <path class="figure-accent" d="M99 17h45l-13 23v22l-18 8V40z"/><circle class="figure-solid" cx="121" cy="30" r="4"/>
+              <path class="figure-arrow" d="M151 39h29"/><path class="figure-arrow-head" d="m175 34 6 5-6 5"/>
+              <rect class="figure-node" x="188" y="19" width="50" height="39" rx="4"/><path class="figure-accent-line" d="M198 47c8-17 17 5 29-17"/>
+              <path class="figure-loop" d="M231 67c-5 17-34 17-43 3"/><path class="figure-arrow-head" d="m188 76-2-7 7 1"/>
+              <text x="9" y="87">DATA POOL</text><text x="100" y="87">SELECT</text><text x="190" y="87">REFINE</text>
+            </svg>
+          </div>
           <p class="thread-summary">DE-Venus treats supervision as an evolving resource across the full RLVR lifecycle: deciding what to label, extracting signal from unlabeled problems, and refining supervision as the policy learns.</p>
           <p class="thread-method">Select actively <span>→</span> supervise weakly <span>→</span> refine online</p>
           <div class="thread-links">
@@ -76,6 +89,19 @@
           <div class="thread-meta"><span>02</span><span>Model transfer</span></div>
           <h3>Representation-based distillation</h3>
           <p class="thread-name">OPRD</p>
+          <div class="thread-figure" role="img" aria-label="OPRD aligns teacher and student representations layer by layer on student-generated rollouts">
+            <svg viewBox="0 0 260 96" aria-hidden="true">
+              <text x="5" y="25">TEACHER</text><text x="5" y="65">STUDENT</text>
+              <g class="figure-nodes">
+                <rect x="65" y="10" width="29" height="23" rx="3"/><rect x="112" y="10" width="29" height="23" rx="3"/><rect x="159" y="10" width="29" height="23" rx="3"/><rect x="206" y="10" width="29" height="23" rx="3"/>
+                <rect x="65" y="50" width="29" height="23" rx="3"/><rect x="112" y="50" width="29" height="23" rx="3"/><rect x="159" y="50" width="29" height="23" rx="3"/><rect x="206" y="50" width="29" height="23" rx="3"/>
+              </g>
+              <g class="figure-flow"><path d="M94 21h18M141 21h18M188 21h18M94 61h18M141 61h18M188 61h18"/></g>
+              <g class="figure-align"><path d="M79 34v15M126 34v15M173 34v15M220 34v15"/></g>
+              <path class="figure-loop" d="M228 80H82c-13 0-21-6-21-17"/><path class="figure-arrow-head" d="m56 67 5-6 5 6"/>
+              <text x="99" y="91">STUDENT ROLLOUTS</text>
+            </svg>
+          </div>
           <p class="thread-summary">Distill where reasoning lives. OPRD aligns teacher and student hidden representations on the student’s own rollouts, replacing noisy output-space estimates with dense, layer-wise supervision.</p>
           <p class="thread-method">Student rollouts <span>→</span> layer alignment <span>→</span> efficient transfer</p>
           <div class="thread-links">
@@ -89,6 +115,16 @@
           <div class="thread-meta"><span>03</span><span>Structured intelligence</span></div>
           <h3>Table intelligence</h3>
           <p class="thread-name">The TableGPT series</p>
+          <div class="thread-figure" role="img" aria-label="TableGPT encodes table structure for reasoning and agentic actions">
+            <svg viewBox="0 0 260 96" aria-hidden="true">
+              <g class="figure-table"><rect x="5" y="13" width="61" height="54" rx="3"/><path d="M5 31h61M5 49h61M25 13v54M47 13v54"/></g>
+              <path class="figure-arrow" d="M74 40h28"/><path class="figure-arrow-head" d="m97 35 6 5-6 5"/>
+              <g class="figure-encoder"><path d="m111 22 21-11 21 11v36l-21 11-21-11z"/><circle cx="132" cy="29" r="4"/><circle cx="122" cy="48" r="4"/><circle cx="142" cy="48" r="4"/><path d="m129 32-5 12m11-12 5 12m-14 4h12"/></g>
+              <path class="figure-arrow" d="M161 40h28"/><path class="figure-arrow-head" d="m184 35 6 5-6 5"/>
+              <g class="figure-agent"><circle cx="218" cy="39" r="22"/><path d="M207 39h22M218 28v22"/><circle cx="218" cy="39" r="5"/></g>
+              <text x="13" y="87">TABLE</text><text x="105" y="87">STRUCTURE</text><text x="199" y="87">AGENT</text>
+            </svg>
+          </div>
           <p class="thread-summary">A model family that treats tables as first-class structured inputs—from command-grounded interaction and multimodal table encoding to reinforcement-learned agents and structure-aware representations.</p>
           <p class="thread-method">Understand structure <span>→</span> reason <span>→</span> act on tables</p>
           <div class="thread-links">
