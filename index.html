@@ -25,6 +25,7 @@
     <a class="name" href="#top">Haobo Wang</a>
     <nav aria-label="Primary navigation">
       <a href="#about">About</a>
+      <a href="#research">Research</a>
       <a href="#publications">Publications</a>
       <a href="#education">Education</a>
       <a href="#service">Service</a>
@@ -44,6 +45,59 @@
           <a href="https://scholar.google.com/citations?user=DnN-rggAAAAJ" target="_blank" rel="noopener">Google Scholar</a>
           <a href="https://github.com/hbzju" target="_blank" rel="noopener">GitHub</a>
         </div>
+      </div>
+    </section>
+
+    <section class="content-section research-threads" id="research">
+      <div class="section-title research-title">
+        <div>
+          <p class="section-kicker">What we are exploring now</p>
+          <h2>Current research threads</h2>
+        </div>
+      </div>
+      <p class="research-intro">Three connected directions toward more efficient reasoning, richer model supervision, and reliable intelligence over structured data.</p>
+
+      <div class="thread-grid">
+        <article class="thread-card">
+          <div class="thread-meta"><span>01</span><span>Reasoning efficiency</span></div>
+          <h3>Data-efficient RLVR</h3>
+          <p class="thread-name">DE-Venus &amp; beyond</p>
+          <p class="thread-summary">DE-Venus treats supervision as an evolving resource across the full RLVR lifecycle: deciding what to label, extracting signal from unlabeled problems, and refining supervision as the policy learns.</p>
+          <p class="thread-method">Select actively <span>→</span> supervise weakly <span>→</span> refine online</p>
+          <div class="thread-links">
+            <a href="https://arxiv.org/abs/2609.03324" target="_blank" rel="noopener">DE-Venus</a>
+            <a href="https://arxiv.org/abs/2606.04503" target="_blank" rel="noopener">PivotTrace</a>
+            <a href="https://arxiv.org/abs/2512.13106" target="_blank" rel="noopener">TraPO</a>
+            <a href="https://arxiv.org/abs/2602.12113" target="_blank" rel="noopener">ARLCP</a>
+          </div>
+        </article>
+
+        <article class="thread-card">
+          <div class="thread-meta"><span>02</span><span>Model transfer</span></div>
+          <h3>Representation-based distillation</h3>
+          <p class="thread-name">OPRD</p>
+          <p class="thread-summary">Distill where reasoning lives. OPRD aligns teacher and student hidden representations on the student’s own rollouts, replacing noisy output-space estimates with dense, layer-wise supervision.</p>
+          <p class="thread-method">Student rollouts <span>→</span> layer alignment <span>→</span> efficient transfer</p>
+          <div class="thread-links">
+            <a href="https://arxiv.org/abs/2606.06021" target="_blank" rel="noopener">Paper</a>
+            <a href="https://shenzhiyang2000.github.io/OPRD-project-page/" target="_blank" rel="noopener">Project</a>
+            <a href="https://github.com/ShenzhiYang2000/OPRD" target="_blank" rel="noopener">Code</a>
+          </div>
+        </article>
+
+        <article class="thread-card">
+          <div class="thread-meta"><span>03</span><span>Structured intelligence</span></div>
+          <h3>Table intelligence</h3>
+          <p class="thread-name">The TableGPT series</p>
+          <p class="thread-summary">A model family that treats tables as first-class structured inputs—from command-grounded interaction and multimodal table encoding to reinforcement-learned agents and structure-aware representations.</p>
+          <p class="thread-method">Understand structure <span>→</span> reason <span>→</span> act on tables</p>
+          <div class="thread-links">
+            <a href="https://arxiv.org/abs/2307.08674" target="_blank" rel="noopener">TableGPT</a>
+            <a href="https://arxiv.org/abs/2411.02059" target="_blank" rel="noopener">TableGPT2</a>
+            <a href="https://arxiv.org/abs/2512.20312" target="_blank" rel="noopener">TableGPT-R1</a>
+            <a href="https://arxiv.org/abs/2512.00947" target="_blank" rel="noopener">TAMO</a>
+          </div>
+        </article>
       </div>
     </section>
 
