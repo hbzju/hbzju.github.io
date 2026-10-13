@@ -72,15 +72,14 @@
             <a href="https://arxiv.org/abs/2606.04503" target="_blank" rel="noopener"><strong>PivotTrace</strong><span>Attention-based data triage</span></a>
             <a href="https://arxiv.org/abs/2606.04516" target="_blank" rel="noopener"><strong>GeoMin</strong><span>Geometric weak-signal filtering</span></a>
             <a href="https://arxiv.org/abs/2512.13106" target="_blank" rel="noopener"><strong>TraPO</strong><span>Trajectory-aware semi-supervision</span></a>
-            <a href="https://arxiv.org/abs/2602.12113" target="_blank" rel="noopener"><strong>ARLCP</strong><span>Adaptive reflection and length control</span></a>
           </div>
         </article>
 
         <article class="thread-card">
-          <div class="thread-meta"><span>02</span><span>Model transfer</span></div>
-          <h3>Representation-based distillation</h3>
-          <p class="thread-name">OPRD</p>
-          <div class="thread-figure" role="img" aria-label="OPRD aligns teacher and student representations layer by layer on student-generated rollouts">
+          <div class="thread-meta"><span>02</span><span>Distillation</span></div>
+          <h3>On-policy distillation</h3>
+          <p class="thread-name">OPRD &amp; related methods</p>
+          <div class="thread-figure" role="img" aria-label="OPRD represents the hidden-state alignment branch of on-policy distillation">
             <svg viewBox="0 0 260 96" aria-hidden="true">
               <text x="5" y="25">TEACHER</text><text x="5" y="65">STUDENT</text>
               <g class="figure-nodes">
@@ -93,8 +92,8 @@
               <text x="99" y="91">STUDENT ROLLOUTS</text>
             </svg>
           </div>
-          <p class="thread-summary">Distill where reasoning lives. OPRD aligns teacher and student hidden representations on the student’s own rollouts, replacing noisy output-space estimates with dense, layer-wise supervision.</p>
-          <p class="thread-method">Student rollouts <span>→</span> layer alignment <span>→</span> efficient transfer</p>
+          <p class="thread-summary">A broader line of on-policy distillation methods that improves how teacher signals are extracted and transferred on the student’s own rollouts—from hidden-state alignment to purified and criterion-aware supervision.</p>
+          <p class="thread-method">Student rollouts <span>→</span> richer teacher signals <span>→</span> reliable transfer</p>
           <div class="thread-papers" aria-label="Related preprints">
             <a href="https://arxiv.org/abs/2606.06021" target="_blank" rel="noopener"><strong>OPRD</strong><span>Hidden-state on-policy distillation</span></a>
             <a href="https://arxiv.org/abs/2607.02234" target="_blank" rel="noopener"><strong>Purified OPSD</strong><span>PMI-filtered transferable supervision</span></a>
